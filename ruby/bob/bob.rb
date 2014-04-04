@@ -1,5 +1,10 @@
 class Bob
 	def	hey(something)
-		"Whatever."
+		case something
+		when something.upcase
+			"Woah, chill out!"
+		else
+			"Whatever."
+		end
 	end
 end
