@@ -29,7 +29,6 @@ class TeenagerTest < MiniTest::Unit::TestCase
   end
 
   def test_shouting_gibberish
-    skip
     gibberish = ('A'..'Z').to_a.shuffle[0,10].join
     assert_equal 'Woah, chill out!', teenager.hey(gibberish)
   end
